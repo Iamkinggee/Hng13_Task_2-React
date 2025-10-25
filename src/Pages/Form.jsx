@@ -16,7 +16,7 @@ function Form() {
 
     const navigate = useNavigate()
 
-// kjkjkjkkjjk
+
 
 
     const handleSubmit = (e, type)=>{
@@ -54,7 +54,7 @@ function Form() {
         }
     }
   return (
-    <div>
+    <div className=''>
         <div className='flex gap-20'>
             <h1 className={!signin? 'activeBtn border-2 border-green-700' : 'nonActive'} onClick={()=>setSignIn(false)}>Sign up</h1>
             <h1  className={signin? 'activeBtn border-2 border-green-700' : 'nonActive'}  onClick={()=>setSignIn(true)}>Sign in</h1>
@@ -65,9 +65,17 @@ function Form() {
             <button>{signin? 'SignIn' : 'SignUp'}</button>
 
         </form>
+
+
+
+
       
     </div>
   )
 }
 
 export default Form
+
+
+
+

@@ -35,10 +35,9 @@ const Header = () => {
     <header className="text-center my-2">
 
       <NavLink to="/home">
-           <h1 className="inline-block  text-white text-2xl font-bold 
+           <h1 className="inline-block  text-black text-2xl font-extrabold font-mono
            
-          drop-shadow-[0_0_20px_#d9f99d,10px_-10px_30px_#bef264,-20px_-20px_40px_#84cc16,20px_-40px_50px_#4d7c0f,-20px_-60px_60px_#3f6212,0_-80px_70px_#365314,10px_-90px_80px_#1a2e05]
-
+         
 
          
       
@@ -60,7 +59,7 @@ const Header = () => {
           to="/home"
           className={({ isActive }) =>
             `px-3 py-1 mx-4 font-bold    transition-all duration-300  ${
-              isActive ? "font-medium " : ""
+              isActive ? "font-medium " : "text-red-600"
             }  hover:border-white`
           }
        

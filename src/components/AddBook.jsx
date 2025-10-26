@@ -8,7 +8,7 @@ const AddBook = ({ books, setBooks }) => {
 
   const handleOnSubmit = (book) => {
     setBooks([book, ...books]);
-    navigate('/dash'); 
+    navigate('/list'); 
   };
 
   return (

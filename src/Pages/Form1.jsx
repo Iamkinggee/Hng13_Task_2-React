@@ -27,7 +27,7 @@ function Form1() {
             if(!localStorage.getItem('user')){
                 localStorage.setItem('user', JSON.stringify([{email:e.target.email.value , password: e.target.password.value }]))
                 // navigate('/home',{state:e.target.email.value})
-                navigate('/header',{state:e.target.email.value})
+                navigate('/home',{state:e.target.email.value})
             }else{
                 for(let val of data){
                     setEmail(val.email)
@@ -37,7 +37,7 @@ function Form1() {
                         setSignIn(true)
                         }else{
                             if(val.password == e.target.password.value){
-                                     navigate('/header',{state:e.target.email.value}) 
+                                     navigate('/home',{state:e.target.email.value}) 
                             }else{
                                 alert('password does not match')
                             }
@@ -47,7 +47,7 @@ function Form1() {
                 }
                 if(type == 'signUp' && email !==e.target.email.value){
                     localStorage.setItem('user',JSON.stringify([...data,{email:e.target.email.value , password: e.target.password.value }]))
-                     navigate('/header',{state:e.target.email.value}) 
+                     navigate('/home',{state:e.target.email.value}) 
                 }else{
                     alert("user does not exist")
                     setSignIn(false)

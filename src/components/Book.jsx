@@ -109,7 +109,7 @@ const Book = ({
     <>
       <Card
         style={{ width: "18rem" }}
-        className="[box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]"
+        className=" [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]  items-center p-2"
       >
         <Card.Body>
           <Card.Title className="book-title">{bookname}</Card.Title>
@@ -141,7 +141,7 @@ const Book = ({
           <div
             onClick={(e) => e.stopPropagation()}
             className="
-              relative bg-white rounded-xl shadow-lg p-6 
+              relative bg-white  rounded-xl shadow-lg p-6 
               w-72 transition-all scale-100 opacity-100
             "
           >

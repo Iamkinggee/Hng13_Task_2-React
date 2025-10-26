@@ -66,6 +66,7 @@ import useLocalStorage from './hooks/useLocalStorage'
 import EditBook from './components/EditBook';
 import Hero from './Pages/Hero';
 import Form1 from './Pages/Form1'
+import Home from './Pages/Home';
 
 
 
@@ -93,8 +94,13 @@ const App = () => {
           />
 
           <Route
-            path="/dash"
+            path="/list"
             element={<BooksList books={books} setBooks={setBooks} />}
+          />
+
+          <Route
+            path="/home"
+            element={<Home />}
           />
 
 

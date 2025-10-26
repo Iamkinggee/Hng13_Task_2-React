@@ -59,7 +59,7 @@ const BooksList = ({ books, setBooks }) => {
           <Book key={book.id} {...book} handleRemoveBook={handleRemoveBook} />
         ))
       ) : (
-        <p className="text-[#0e1b1e] text-3xl font-bold pt-12 ml-2">No books available. Please add some books.</p>
+        <p className="text-[#0e1b1e] text-3xl font-bold pt-12 ml-2">No Tickets available. Please add some Tickets.</p>
       )}
     </div>
       </>

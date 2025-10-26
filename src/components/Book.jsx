@@ -108,13 +108,13 @@ const Book = ({
   return (
     <>
       <Card
-        style={{ width: "18rem" }}
-        className=" [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]  items-center p-2"
+        style={{ width: "15rem", margin:"5px" }}
+        className=" [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]  items-center "
       >
         <Card.Body>
           <Card.Title className="book-title">{bookname}</Card.Title>
           <div className="book-details">
-            <div>Author: {author}</div>
+            <div>Package: {author}</div>
             <div>Quantity: {quantity}</div>
             <div>Price: {price}</div>
             <div>Date: {new Date(date).toDateString()}</div>
@@ -135,7 +135,7 @@ const Book = ({
           onClick={() => setOpen(false)}
           className="
             fixed inset-0 flex justify-center items-center 
-            bg-black/20 backdrop-blur-sm
+            bg-black/20 backdrop-blur-sm z-10
           "
         >
           <div

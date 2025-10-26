@@ -11,7 +11,7 @@ const EditBook = ({ books, setBooks }) => {
   const handleOnSubmit = (book) => {
     const filteredBooks = books.filter((b) => b.id !== id);
     setBooks([book, ...filteredBooks]);
-    navigate('/');
+    navigate('/dash');
   };
 
   return (

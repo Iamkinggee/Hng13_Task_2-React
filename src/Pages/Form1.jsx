@@ -26,7 +26,8 @@ function Form1() {
         if(e.target.email.value && e.target.password.value){
             if(!localStorage.getItem('user')){
                 localStorage.setItem('user', JSON.stringify([{email:e.target.email.value , password: e.target.password.value }]))
-                navigate('/home',{state:e.target.email.value})
+                // navigate('/home',{state:e.target.email.value})
+                navigate('/header',{state:e.target.email.value})
             }else{
                 for(let val of data){
                     setEmail(val.email)
@@ -36,7 +37,7 @@ function Form1() {
                         setSignIn(true)
                         }else{
                             if(val.password == e.target.password.value){
-                                     navigate('/home',{state:e.target.email.value}) 
+                                     navigate('/header',{state:e.target.email.value}) 
                             }else{
                                 alert('password does not match')
                             }
@@ -46,7 +47,7 @@ function Form1() {
                 }
                 if(type == 'signUp' && email !==e.target.email.value){
                     localStorage.setItem('user',JSON.stringify([...data,{email:e.target.email.value , password: e.target.password.value }]))
-                     navigate('/home',{state:e.target.email.value}) 
+                     navigate('/header',{state:e.target.email.value}) 
                 }else{
                     alert("user does not exist")
                     setSignIn(false)
@@ -57,7 +58,6 @@ function Form1() {
   return (
     <div className=" bg-[url('./assets/wave.svg')] bg-no-repeat bg-cover bg-center">
 
-    <h1 className='text-start  text-white pl-20 p-4 font-mono font-bold text-2xl bg-[#2fd3b8] '>KingsTickets</h1>
 
 
  

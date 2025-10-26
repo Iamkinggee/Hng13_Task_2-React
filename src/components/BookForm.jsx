@@ -70,54 +70,54 @@ const BookForm = (props) => {
   };
 
   return (
-    <div className="main-form">
-      {errorMsg && <p className="errorMsg">{errorMsg}</p>}
+    <div  className="text-[#222] text-lg w-[70%] mx-auto mt-12 pt-10 [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)] p-10">
+      {errorMsg && <p className="text-[#f21e08] bg-[#fff0f0] p-2 rounded">{errorMsg}</p>}
       <Form onSubmit={handleOnSubmit}>
-        <Form.Group controlId="name">
-          <Form.Label>Book Name</Form.Label>
+        <Form.Group controlId="name" className="mb-6">
+          <Form.Label className="block font-semibold mb-2">Name</Form.Label>
           <Form.Control
-            className="input-control"
+             className="block w-full border border-gray-300 text-gray-600 bg-white h-12 text-lg rounded-none mb-6 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-300"
             type="text"
             name="bookname"
             value={bookname}
-            placeholder="Enter name of book"
+            placeholder="Enter Name"
             onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group controlId="author">
-          <Form.Label>Book Author</Form.Label>
+          <Form.Label>Package: vip or regular</Form.Label>
           <Form.Control
-            className="input-control"
+           className="block w-full border border-gray-300 text-gray-600 bg-white h-12 text-lg rounded-none mb-6 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-300"
             type="text"
             name="author"
             value={author}
-            placeholder="Enter name of author"
+            placeholder="Enter Package"
             onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group controlId="quantity">
           <Form.Label>Quantity</Form.Label>
           <Form.Control
-            className="input-control"
+            className="block w-full border border-gray-300 text-gray-600 bg-white h-12 text-lg rounded-none mb-6 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-300"
             type="number"
             name="quantity"
             value={quantity}
-            placeholder="Enter available quantity"
+            placeholder="Enter Quantity"
             onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group controlId="price">
-          <Form.Label>Book Price</Form.Label>
+          <Form.Label>Price </Form.Label>
           <Form.Control
-            className="input-control"
+           className="block w-full border border-gray-300 text-gray-600 bg-white h-12 text-lg rounded-none mb-6 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-300"
             type="text"
             name="price"
             value={price}
-            placeholder="Enter price of book"
+            placeholder="Enter Price ($)"
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" className="submit-btn">
+        <Button variant="primary" type="submit"  className="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded transition-all duration-300 w-full">
           Submit
         </Button>
       </Form>
@@ -126,3 +126,11 @@ const BookForm = (props) => {
 };
 
 export default BookForm;
+
+
+
+
+
+
+
+

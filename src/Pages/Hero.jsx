@@ -1,26 +1,69 @@
 import React from 'react'
 import './Hero.css'
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+
+
+
 function Hero() {
+ 
+
   return (
 
-    <>
-    <div class="Hero ">
-  <div class="flex flex-col md:flex-row h-full">
+    < >
+    <div class="h-full relative">
+      
+  <div class="custom-shape-divider-bottom-1761434110">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"  className="fill-green-500"></path>
+    </svg>
+</div>
+  <div class="flex flex-col w- gap-20 md:flex-row h-[450px] justify-center items-center mt-20 mx-20 "> 
     
+     
+    <div class="flex-1 pt-10 mt-12  items-center justify-center  px-10 h-[450px]  ">
+      <h1 className='font-mono  text-black mb-6 md:text-[15px]'>KingsTickets</h1>
+      <p className='text-[20px] text-black mt-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quos totam. Praesentium enim temporibus perferen quas magni vel dolorum ad cumque. mmmQudddd</p>
+      
+     <div className='flex flex-col md:flex-row gap-5 mt-6'>
 
-    <div class="flex-1  flex items-center justify-center text-white text-2xl">
-      Left Side
+
+
+
+
+
+     
+        <Link to="/Form1">
+        <button  className='w-[250px] h-[60px] rounded-[20px] text-[600px]  bg-green-400 text-white  border-2 border-green-400 text' variant="primary" >Login</button>
+      </Link>
+
+
+<Link to='/add'>
+<button className='w-[250px] h-[60px] rounded-[20px] text-2xl  text-black border-2 border-green-400 text'>
+        Get started
+      </button>
+
+</Link>
+      
+     </div>
+ 
+
+
+      
+
+
+    
     </div>
 
-    <div class="flex-1  flex items-center justify-center text-white text-2xl bg-red-300 ">
-      Right Side
+    <div class="flex-1  flex items-center justify-center  text-2xl rounded-[100%] bg-gray-300 h-[450px]  ">
+
+       <img src="https://readymadeui.com/signin-image.webp" className="w-full aspect-[12/12] object-contain" alt="login-image" />
     </div>
 
   </div>
+
 </div>
-
-
-<svg className=' ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="0.6" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,186.7C672,213,768,235,864,240C960,245,1056,235,1152,213.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
 </>
 
@@ -29,3 +72,12 @@ function Hero() {
 }
 
 export default Hero
+
+
+
+
+
+
+
+
+

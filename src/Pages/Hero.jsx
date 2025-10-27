@@ -31,18 +31,13 @@ function Hero() {
      <div className='flex flex-col md:flex-row gap-5 mt-6'>
 
 
-
-
-
-
-     
         <Link to="/Form1">
         <button  className='w-[250px] h-[60px] rounded text-[600px]  bg-green-600 text-white  border-2 border-green-600 font-bold ' variant="primary" >Login</button>
       </Link>
 
 
-<Link to='/Form1'>
-<button className='w-[250px] h-[60px] rounded text-2xl  text-black font-bold  border-2 border-green-600 text'>
+       <Link to='/Form1'>
+       <button className='w-[250px] h-[60px] rounded text-2xl  text-black font-bold  border-2 border-green-600 text'>
         Get started
       </button>
 

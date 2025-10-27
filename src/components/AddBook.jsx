@@ -1,7 +1,7 @@
 import React from 'react';
 import BookForm from './BookForm';
 import { useNavigate } from 'react-router-dom';
-import Header from './Header';
+import Nav from './Nav';
 
 const AddBook = ({ books, setBooks }) => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const AddBook = ({ books, setBooks }) => {
 
   return (
     <>
-      <Header />
+      <Nav />
    
     <React.Fragment>
       <BookForm handleOnSubmit={handleOnSubmit} />

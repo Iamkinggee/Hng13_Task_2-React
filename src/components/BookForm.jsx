@@ -117,9 +117,11 @@ const BookForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit"  className="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded transition-all duration-300 w-full">
+        <button  type="submit"  className="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded transition-all duration-300 w-full">
           Submit
-        </Button>
+        </button>
+
+   
       </Form>
     </div>
   );

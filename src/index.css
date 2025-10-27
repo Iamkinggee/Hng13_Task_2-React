@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* 
+a {
+  @apply no-underline text-inherit;
+}
+
+*/
+
+a:hover {
+  @apply no-underline;
+} 

@@ -1,6 +1,7 @@
 import React from 'react';
 import BookForm from './BookForm';
 import { useParams, useNavigate } from 'react-router-dom';
+import  Nav  from '../components/Nav';
 
 const EditBook = ({ books, setBooks }) => {
   const { id } = useParams();
@@ -16,6 +17,7 @@ const EditBook = ({ books, setBooks }) => {
 
   return (
     <div>
+      <Nav/>
       <BookForm book={bookToEdit} handleOnSubmit={handleOnSubmit} />
     </div>
   );

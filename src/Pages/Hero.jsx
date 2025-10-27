@@ -23,8 +23,9 @@ function Hero() {
   <div className="flex flex-col p gap-20 md:flex-row h-[400px] md:pt-2.5 pt-10 justify-center items-center mt-20 mx-20 "> 
     
      
-    <div class="flex-1 pt-10 mt-[10px]  items-center justify-center  px-10 h-[450px]  ">
-      <h1 className='font-mono  text-black mb-6 md:text-[15px]  '>KingsTickets</h1>
+    <div class="flex-1 pt-10  items-center justify-center  px-10 h-[450px] mt-[250px]  md:mt-0 ">
+      <h1 className='font-mono  text-black mb-4 md:text-[50px] font-bold  text-2xl'>KingsTickets</h1>
+
       <p className='text-[20px] text-black mt-6'>
         Manage, track and resolve tickets effortlessly with our intuitive CRUD-based tickect management system. Create, update and organise issues - all in one place.</p>
       
@@ -32,12 +33,12 @@ function Hero() {
 
 
         <Link to="/Form1">
-        <button  className='w-[250px] h-[60px] rounded text-[600px]  bg-green-600 text-white  border-2 border-green-600 font-bold ' variant="primary" >Login</button>
+        <button  className='w-[250px] h-[60px] rounded  text-xl  border-2 border-green-600 bg-green-600 font-semibold text-white ' >Login</button>
       </Link>
 
 
        <Link to='/Form1'>
-       <button className='w-[250px] h-[60px] rounded text-2xl  text-black font-bold  border-2 border-green-600 text'>
+       <button className='w-[250px] h-[60px] rounded text-xl  text-black font-semibold  border-2 border-green-600 text'>
         Get started
       </button>
 

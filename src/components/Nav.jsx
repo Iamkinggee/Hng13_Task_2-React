@@ -288,6 +288,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   const data = useLocation();
@@ -329,8 +330,18 @@ function Nav() {
       <div className="flex justify-between items-center px-4 py-3 md:py-4 md:px-8">
         {/* Welcome Text */}
         <div className="text-center md:text-left">
-          <p className="text-black font-bold text-xl">Welcome,</p>
-          <p className="text-gray-700 text-sm">{userEmail || "Loading..."}</p>
+          {/* <p className="text-black font-bold text-xl">Welcome,</p> */}
+
+
+
+
+            <NavLink to="/home">
+              <h1 className="inline-block text-green-600 text-2xl font-extrabold font-mono ">
+                KingsTickets
+              </h1>
+            </NavLink>
+
+          <p className="text-gray-700 text-sm"> <span className="font-semibold">User : {}</span>{userEmail || "Loading..."}</p>
         </div>
 
         {/* Desktop Header Component */}

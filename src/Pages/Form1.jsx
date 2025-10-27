@@ -1067,9 +1067,9 @@ function Form1() {
 
       {/* ===== Main Form Section ===== */}
       <div className="flex flex-col items-center justify-center p-4 bg-center h-[500px]">
-        <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 rounded-md">
+        <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 rounded-md  mt-[280px]  md:mt-0 ">
           {/* ===== FORM ===== */}
-          <div className="md:max-w-md w-full px-4 py-6 [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)] bg-white rounded-2xl">
+          <div className="md:max-w-md w-full px-4 py-6 [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)] bg-white rounded-2xl  ">
             <form
               onSubmit={(e) => handleSubmit(e, signin ? "signIn" : "signUp")}
               noValidate

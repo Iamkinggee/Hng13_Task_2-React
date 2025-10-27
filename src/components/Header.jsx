@@ -89,13 +89,17 @@ function Header() {
   return (
     <div className="text-center my-4">
   {/* Logo */}
-  <NavLink to="/home">
-    <h1 className="inline-block text-black text-2xl font-extrabold font-mono">
+
+
+  {/* <NavLink to="/home">
+    <h1 className="inline-block text-green text-2xl font-extrabold font-mono mb-5">
       KingsTickets
     </h1>
-  </NavLink>
+  </NavLink> */}
 
-  <hr className="my-2 border border-gray-400" />
+
+{/* 
+  <hr className="my-2 border border-gray-400" /> */}
 
   {/* Nav Links */}
   <div
@@ -128,26 +132,30 @@ function Header() {
 
     <NavLink
       to="/list"
-      className={({ isActive }) =>
-        `px-3 py-1 font-bold transition-all duration-300 ${
-          isActive ? "text-black font-medium" : "text-red-600"
-        } hover:text-black`
-      }
+  
+     className={({ isActive }) =>
+    `px-3 py-1 font-bold transition-all duration-300
+     ${isActive ? "text-black border-b-2 border-green-600" : "text-gray-700 hover:text-green-600"}
+     no-underline hover:no-underline`
+  }
     >
       Ticket List
     </NavLink>
 
+
     <NavLink
       to="/add"
-      className={({ isActive }) =>
-        `px-3 py-1 font-bold transition-all duration-300 ${
-          isActive ? "text-black font-medium" : "text-red-600"
-        } hover:text-black`
-      }
-    >
+    
+     className={({ isActive }) =>
+    `px-3 py-1 font-bold transition-all duration-300
+     ${isActive ? "text-black border-b-2 border-green-600" : "text-gray-700 hover:text-green-600"}
+     no-underline hover:no-underline`
+  }
+     >
       Add Ticket
     </NavLink>
   </div>
+
 
 </div>
   )

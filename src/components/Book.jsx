@@ -109,23 +109,23 @@ const Book = ({
     <>
       <Card
         style={{ width: "15rem", margin:"5px" }}
-        className=" [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]  items-center "
+        className=" [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)]  items-center p-6 "
       >
         <Card.Body>
-          <Card.Title className="book-title">{bookname}</Card.Title>
-          <div className="book-details">
-            <div>Package: {author}</div>
-            <div>Quantity: {quantity}</div>
-            <div>Price: {price}</div>
+          <Card.Title className="font-bold text-2xl font-mono py-5">{bookname}</Card.Title>
+          <div className="font-semibold">
+            <div>Package: <span className="text-xl font-mono">{author}</span></div>
+            <div>Quantity: <span className="text-xl font-mono">{quantity}</span></div>
+            <div>Price: <span className="text-xl font-mono">{price}</span></div>
             <div>Date: {new Date(date).toDateString()}</div>
           </div>
 
-          <Button variant="primary" onClick={() => navigate(`/edit/${id}`)}>
+          <button className="bg-blue-700 rounded text-white px-5 py-2 mt-5 font-semibold mr-1"  onClick={() => navigate(`/edit/${id}`)}>
             Edit
-          </Button>{" "}
-          <Button variant="danger" onClick={() => setOpen(true)}>
+          </button>{" "}
+          <button className="bg-red-700 rounded text-white px-5 py-2 mt-5 font-semibold " onClick={() => setOpen(true)}>
              Delete
-          </Button>
+          </button>
         </Card.Body>
       </Card>
 
@@ -164,13 +164,13 @@ const Book = ({
 
               <div className="flex gap-3">
                 <button
-                  className="btn btn-danger w-full"
+                  className="btn btn-danger bg-red-700 p-2 text-white rounded w-full font-semibold"
                   onClick={confirmDelete}
                 >
                   Delete
                 </button>
                 <button
-                  className="btn btn-light w-full"
+                   className="btn btn-danger bg-gray-200 p-2 text-gray-700 rounded w-full font-semibold"
                   onClick={() => setOpen(false)}
                 >
                   Cancel
